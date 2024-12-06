@@ -52,8 +52,8 @@ for num,i in enumerate(secondpart):
             (a,b,c) = iscompliant(firstpart,newline)
             if a:
                 break
-            randnum=b
-            awa[randnum],awa[c] = awa[c], awa[randnum] #This is a terrible and awfully slow approach to doing it, however, in this case itll still finish in a couple of seconds, so realistically its fine
+            newindex=b
+            awa[newindex],awa[c] = awa[c], awa[newindex] #This is a terrible and awfully slow approach to doing it, however, in this case itll still finish in a couple of seconds, so realistically its fine
             newline = ",".join(awa)
             
             #print(f"try {k}",end='\r')
