@@ -11,7 +11,6 @@ for num,i in enumerate(l):
         state = 1
         for k in range(int(i)):
             result.append(".")
-print(result, len(result))
 def is_same(arr, c):
     t = c #this used to be different, however, its like this. Why am i assigning a variable to another variable? I dont know. Why do i yap about it for 3 years instead of just deleting this line and changing the input to c? Cuz meow. I wanna go to sleep, its been a long day, my brain is not braining, but the grind never stops umu
     for i in arr:
@@ -28,7 +27,7 @@ def organize_array(arr):
             while (start>0 and arr[start]==a):
                 start = start-1
             start += 1
-            print(f"{a} goes from {start} to {stop}")
+            print(f"{a} goes from {start} to {stop}         ", end='\r')
             for k in range(len(arr)-(stop-start)):
                 if is_same(arr[k:k+stop-start+1], ".") and k<start:
                     for j in range(stop-start+1):
@@ -45,5 +44,5 @@ total = 0
 for num,i in enumerate(result):
     if i != ".":
         total += num*i
-print(result, len(result))
-print(total)
+#print(result, len(result))
+print("\nresult: ", total)
